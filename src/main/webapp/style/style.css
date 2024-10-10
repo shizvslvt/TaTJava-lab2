@@ -1,0 +1,118 @@
+:root {
+    --lightblk: #1e2124;
+    --lightgrey: rgba(68, 73, 80, 0.2);
+    --blk: #111417;
+    --blue: 0, 255, 238;
+    --red: 255, 8, 0;
+    --white: #fff;
+    --headtxt: #c4f2eb;
+    --green: rgba(128, 255, 180, 0.7);
+    --grey: rgba(255, 255, 255, 0.30);
+    --app-content-secondary-color: #1d283c;
+    --lightred: #ff646d;
+    --blk2: rgb(18, 18, 18);
+    --filter-shadow: rgba(16, 24, 39, 0.8) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+body {
+    background-color: var(--blk2);
+    font-family: 'Futura PT Demi', sans-serif;
+    color: var(--white);
+}
+
+.container {
+    margin: 0 auto;
+    transform: translateY(30%);
+    background: linear-gradient(to bottom, transparent, rgb(30, 30, 30)), rgba(222, 169, 255, 0.8);
+    width: 700px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-item {
+    background: var(--blk);
+    border-radius: 8px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.container-item::-webkit-scrollbar {
+    width: 8px;
+
+}
+.container-item::-webkit-scrollbar-thumb {
+    background: var(--grey);
+    border-radius: 8px;
+}
+
+
+.container input {
+    color : var(--grey);
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    border: 0;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    width: auto;
+}
+.container input:hover {
+    transition: 0.5s ease-out;
+    background: rgba(255, 255, 255, 0.035);
+
+}
+
+.button {
+    background-color: var(--grey);
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 8px;
+    border-width: 0;
+}
+
+.button:hover {
+    transition: 0.3s ease-out;
+    opacity: 50%;
+}
+
+
+table {
+    border: 1px solid var(--grey);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid var(--grey);
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.11);
+}
+td {
+    width: auto;
+    color: var(--grey);
+}
+small {
+    color: var(--grey);
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+small {
+    display: block;
+}
